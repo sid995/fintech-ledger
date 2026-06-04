@@ -2,16 +2,16 @@
 
 ## Current status
 
-- Current phase: Phase 0
+- Current phase: Phase 1
 - Current lesson: Not started
-- Last completed checkpoint: None
+- Last completed checkpoint: Phase 0 — Go module and tooling smoke check
 - Current blockers: None
 
 ## Phase tracker
 
 | Phase | Topic | Status | Notes |
 |---|---|---|---|
-| 0 | Environment and learning discipline | Not started | |
+| 0 | Environment and learning discipline | Complete | Go module, cmd/ledger-check, internal/version test |
 | 1 | Go foundations | Not started | |
 | 2 | Fintech domain modeling | Not started | |
 | 3 | Clean Architecture and ports | Not started | |
@@ -30,6 +30,16 @@
 | 16 | Capstone extensions | Not started | |
 
 ## Completed lessons
+
+### 2026-06-04: Phase 0, Developer environment and learning discipline
+
+- Concepts understood: Go module path, package vs command (`package main`), `cmd/` layout, `go fmt` / `go vet` / `go test`
+- Code completed: `go.mod`, `README.md`, `cmd/ledger-check`, `internal/version` with table-style unit test
+- Tests completed: `go test ./...` (version banner test)
+- Commands run: `go mod init`, `go fmt ./...`, `go vet ./...`, `go test ./...`, `go run ./cmd/ledger-check`
+- Design decisions: module path `github.com/siddharthkundu/fintech-ledger`; smoke binary named `ledger-check`
+- Unresolved questions: none for Phase 0
+- Next step: Phase 1 — Go foundations exercises under `learning/`
 
 Add one entry after each lesson:
 
